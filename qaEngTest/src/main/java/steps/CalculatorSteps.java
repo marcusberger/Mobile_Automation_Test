@@ -54,4 +54,22 @@ public class CalculatorSteps {
     public void digitarAOperacaoDeMultiplicacao() {
         page.btnMultiplicacao();
     }
+
+    @Quando("digitar a operacao de divisao")
+    public void digitarAOperacaoDeDivisao() {
+        page.btnDivisao();
+    }
+
+    @Quando("o usuario digita uma sequencia de numero")
+    public void oUsuarioDigitaUmaSequenciaDeNumero() {
+       page.clicarBtn3();
+       page.clicarBtn1();
+       page.clicarBtn6();
+       page.clicarBtn7();
+    }
+
+    @E("clica em {string}")
+    public void clicaEm(String string) {
+        page.btnAC();
+    }
 }

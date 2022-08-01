@@ -29,3 +29,19 @@ Funcionalidade: Operações Matematicas
     E clicar o valor "3"
     E clicar no igual
     Entao o resultado apresentado devera ser "15"
+
+  @divisao @Test
+  Cenario: Multiplicacao de dois numeros inteiros
+    Dado que o usuario esteja na calculadora
+    Quando o usuario clicar o valor "5"
+    E digitar a operacao de divisao
+    E clicar o valor "3"
+    E clicar no igual
+    Entao o resultado apresentado devera ser "1,66"
+
+  @limpandoNumerosDigitados @Test
+  Cenario: Limpando numeros digitados
+    Dado que o usuario esteja na calculadora
+    Quando o usuario digita uma sequencia de numero
+    E clica em "AC"
+    Entao o resultado apresentado devera ser "0"

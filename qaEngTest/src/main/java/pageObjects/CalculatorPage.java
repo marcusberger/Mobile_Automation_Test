@@ -67,6 +67,10 @@ public class CalculatorPage {
         btnDivisao.click();
     }
 
+    public void btnAC(){
+        btnAC.click();
+    }
+
     public void btnMultiplicacao() {
         btnMultiplicacao.click();
     }
