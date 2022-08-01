@@ -57,63 +57,77 @@ public class CalculatorPage {
     @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='Text_-']")
     private MobileElement btnSubtracao;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='Text_/']")
+    private MobileElement btnDivisao;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='Text_*']")
+    private MobileElement btnMultiplicacao;
+
+    public void btnDivisao() {
+        btnDivisao.click();
+    }
+
+    public void btnMultiplicacao() {
+        btnMultiplicacao.click();
+    }
+
     public void btnSubtracao(){
         btnSubtracao.click();
     }
 
-    public void btnIgual(){
+    public void btnIgual() {
         btnIgual.click();
     }
 
-    public void validarQueEstouNoApp(){
+    public void validarQueEstouNoApp() {
         btnAC.click();
     }
 
-    public void validarResultado(){
+    public void validarResultado() {
         campoResultado.getText();
     }
 
-    public void btnSoma(){
+    public void btnSoma() {
         btnSoma.click();
     }
 
-    public void clicarBtn0(){
+    public void clicarBtn0() {
         btn0.click();
     }
 
-    public void clicarBtn1(){
+    public void clicarBtn1() {
         btn1.click();
     }
 
-    public void clicarBtn2(){
+    public void clicarBtn2() {
         btn2.click();
     }
 
-    public void clicarBtn3(){
+    public void clicarBtn3() {
         btn3.click();
     }
 
-    public void clicarBtn4(){
+    public void clicarBtn4() {
         btn4.click();
     }
 
-    public void clicarBtn5(){
+    public void clicarBtn5() {
         btn5.click();
     }
 
-    public void clicarBtn6(){
+    public void clicarBtn6() {
         btn6.click();
     }
 
-    public void clicarBtn7(){
+    public void clicarBtn7() {
         btn7.click();
     }
 
-    public void clicarBtn8(){
+    public void clicarBtn8() {
         btn8.click();
     }
 
-    public void clicarBtn9(){
+    public void clicarBtn9() {
         btn9.click();
     }
 

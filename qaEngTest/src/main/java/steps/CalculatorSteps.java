@@ -33,7 +33,6 @@ public class CalculatorSteps {
     public void clicar_o_valor(String valor2) {
         page.clicarBtn3();
         Assert.assertEquals("3", valor2);
-
     }
 
     @Quando("clicar no igual")
@@ -44,11 +43,15 @@ public class CalculatorSteps {
     @Entao("o resultado apresentado devera ser {string}")
     public void o_resultado_apresentado_devera_ser(String resultado) {
         page.validarResultado();
-        //Assert.assertEquals("8", resultado);
     }
 
     @Quando("digitar a operacao de subtracao")
     public void digitarAOperacaoDeSubtracao() {
         page.btnSubtracao();
+    }
+
+    @Quando("digitar a operacao de multiplicacao")
+    public void digitarAOperacaoDeMultiplicacao() {
+        page.btnMultiplicacao();
     }
 }
