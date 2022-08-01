@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty"},
         features = "src\\main\\resources\\features",
         glue = "steps",
-        tags = {"@End2End"},
+        tags = {"@Test"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         monochrome = true,
         dryRun = false

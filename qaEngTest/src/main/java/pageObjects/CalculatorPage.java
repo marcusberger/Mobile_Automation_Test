@@ -42,6 +42,41 @@ public class CalculatorPage {
     @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='Text_9']")
     private MobileElement btn9;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='Text_AC']")
+    private MobileElement btnAC;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='Text_+']")
+    private MobileElement btnSoma;
+
+    @AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc='View_container']/android.view.ViewGroup[1]/android.widget.TextView")
+    private MobileElement campoResultado;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='Text_=']")
+    private MobileElement btnIgual;
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc='Text_-']")
+    private MobileElement btnSubtracao;
+
+    public void btnSubtracao(){
+        btnSubtracao.click();
+    }
+
+    public void btnIgual(){
+        btnIgual.click();
+    }
+
+    public void validarQueEstouNoApp(){
+        btnAC.click();
+    }
+
+    public void validarResultado(){
+        campoResultado.getText();
+    }
+
+    public void btnSoma(){
+        btnSoma.click();
+    }
+
     public void clicarBtn0(){
         btn0.click();
     }
