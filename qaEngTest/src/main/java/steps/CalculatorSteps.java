@@ -1,2 +1,4 @@
-package steps;public class CalculatorSteps {
+package steps;
+
+public class CalculatorSteps {
 }

@@ -1,2 +1,4 @@
-package steps;public class Hooks {
+package steps;
+
+public class Hooks {
 }

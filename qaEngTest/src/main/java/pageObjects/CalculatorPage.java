@@ -1,2 +1,4 @@
-package pageObjects;public class CalculatorPage {
+package pageObjects;
+
+public class CalculatorPage {
 }
